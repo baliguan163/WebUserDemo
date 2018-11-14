@@ -11,19 +11,12 @@ python manage.py migrate
 
 
 
-使用开发服务器
-开发服务器，即开发时使用，一般修改代码后会自动重启，方便调试和开发，但是由于性能问题，建议只用来测试，不要用在生产环境。
 python manage.py runserver
- 
-# 当提示端口被占用的时候，可以用其它端口：
 python manage.py runserver 8001
 python manage.py runserver 9999
-（当然也可以kill掉占用端口的进程，具体后面有讲，此处想知道的同学可查下 lsof 命令用法）
- 
-# 监听机器所有可用 ip （电脑可能有多个内网ip或多个外网ip）
 python manage.py runserver 0.0.0.0:8000
-# 如果是外网或者局域网电脑上可以用其它电脑查看开发服务器
-# 访问对应的 ip加端口，比如 http://172.16.20.2:8000
+
+http://172.16.20.2:8000
 
 清空数据库
 python manage.py flush
@@ -31,7 +24,7 @@ python manage.py flush
 
 
 创建超级管理员
-
+python manage.py createsuperuser
 
 
 
