@@ -1,2 +1,2 @@
-# WebUserDemo
-基于django的web blog app
+# python_web_cmdb
+基于django的CMDB之资产管理系统
